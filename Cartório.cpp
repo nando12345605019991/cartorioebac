@@ -1,12 +1,12 @@
-#include <stdio.h> //Bioblioteca de comunicação de usuário 
-#include <stdlib.h> //biblioteca de alocação de espaço em memória 
-#include <locale.h> //biblioteca de alocações de texto por região 
+#include <stdio.h> //Bioblioteca de comunicaÃ§Ã£o de usuÃ¡rio 
+#include <stdlib.h> //biblioteca de alocaÃ§Ã£o de espaÃ§o em memÃ³ria 
+#include <locale.h> //biblioteca de alocaÃ§Ãµes de texto por regiÃ£o 
 
 int main()
 
 
 
-{   int opcao=0; //defenindo as variáveis
+{   int opcao=0; //defenindo as variÃ¡veis
     int laco=1; 
 
     for(laco=1;laco=1;)
@@ -18,13 +18,14 @@ int main()
 
 		setlocale(LC_ALL,"Portuguese"); //defenindo linguagem 
 	
-		printf(" ###cartório da EBAC ###\n\n");  //inicio do menu 
- 	    printf("Escolha a opção desejada do manu:\n\n");
+		printf(" ###cartÃ³rio da EBAC ###\n\n");  //inicio do menu 
+ 	    printf("Escolha a opÃ§Ã£o desejada do manu:\n\n");
 		printf("\t1 - registrar nomes\n");
 		printf("\t2 - consultar nomes\n");
 		printf("\t3 - deletar nomes\n\n");// fim do menu
+	        printf("\tt4- sair do sistema\n\n");
 		printf("opacao:");
-		scanf("%d",&opcao);//armazenando a escolha do usuário
+		scanf("%d",&opcao);//armazenando a escolha do usuÃ¡rio
 	
     	system("cls");
     	
@@ -33,27 +34,30 @@ int main()
     	
     		
     	    case1:
-    	    printf("Você escolheu o registro de nomes!\n");
+    	    printf("VocÃª escolheu o registro de nomes!\n");
        		system("pause");
        	    break;
         
         
          	case2:         		
-            printf("Você escolheu consultar os nomes!\n");
+            printf("VocÃª escolheu consultar os nomes!\n");
     	    system("pause");
     	    break;
     	    
     	    
     	
     	    case3:    	    
-    	    printf("Você escolheu deletar nomes!\n");
+    	    printf("VocÃª escolheu deletar nomes!\n");
     	    system("pause");
     	    break;
     	    
-    	    
+            case4:
+	    printf("obrigado por ultilizar o sistema!n\");
+	    return 0;
+	    break;
     	
     	    default:
-    	    printf("Essa opção não está disponivel!\n");// fim da seleção
+    	    printf("Essa opÃ§Ã£o nÃ£o estÃ¡ disponivel!\n");// fim da seleÃ§Ã£o
     	    system("pause");
     	    break;
                
